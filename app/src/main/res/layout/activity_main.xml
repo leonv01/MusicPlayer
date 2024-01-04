@@ -7,26 +7,16 @@
     tools:context=".MainActivity">
 
 
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/barMusicPlayer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        tools:ignore="MissingConstraints" />
-
     <TextView
         android:id="@+id/textSong"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:text="Song"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/barMusicPlayer" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/songArtist"
