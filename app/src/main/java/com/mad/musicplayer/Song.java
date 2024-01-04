@@ -4,17 +4,18 @@ public class Song {
     private String title;
     private String artist;
     private String album;
-    private String duration;
     private String path;
-    private boolean wasPlayed;
 
-    public Song(String title, String artist, String album, String duration, String path) {
+    private double latitude;
+    private double longitude;
+
+    public Song(String title, String artist, String album, String path, double latitude, double longitude) {
         this.title = title;
         this.artist = artist;
         this.album = album;
-        this.duration = duration;
         this.path = path;
-        this.wasPlayed = false;
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 
     public String getTitle() {
@@ -41,14 +42,6 @@ public class Song {
         this.album = album;
     }
 
-    public String getDuration() {
-        return duration;
-    }
-
-    public void setDuration(String duration) {
-        this.duration = duration;
-    }
-
     public String getPath() {
         return path;
     }
@@ -57,11 +50,19 @@ public class Song {
         this.path = path;
     }
 
-    public boolean getWasPlayed() {
-        return wasPlayed;
+    public double getLatitude() {
+        return latitude;
     }
 
-    public void setHasPlayed(boolean hasPlayed) {
-        this.wasPlayed = hasPlayed;
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
     }
 }
